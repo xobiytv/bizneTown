@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tex-hed{
+    color: transparent;
+    background-image: linear-gradient(0.25turn, rgba(0, 198, 255, 1) 0%, rgba(40, 43, 217, 1) 100%);
+    -webkit-background-clip: text;
+    will-change: transform;
+    font-size: 35px;
+    font-family: 'NAMU-HELIOS', Arial, sans-serif;
+    line-height: 1.15;
+    font-weight: 800;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-flow{
+    background: url('./Assisent/bg_hed.png' ) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+.roboto-slab{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.sixtyfour {
+  font-family: "Sixtyfour", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
 }
