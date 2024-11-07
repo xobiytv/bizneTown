@@ -36,7 +36,7 @@ function TypewriterText() {
   }, [charIndex, currentWordIndex, words]);
 
   return (
-    <div className='h-[100px] roboto-slab' style={{ fontSize: '64px', fontWeight: 'bold' }}>
+    <div className='h-[100px] roboto-slab' style={{ fontSize: '54px', fontWeight: 'bold' }}>
       {displayedText}
     </div>
   );

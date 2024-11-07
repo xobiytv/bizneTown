@@ -4,7 +4,7 @@ import Top from './Top'
 import Center from './Center'
 const App = () => {
     return (
-        <Box className="bg-flow min-h-screen flex justify-evenly  items-start flex-col">
+        <Box className="bg-flow h-full min-h-screen flex justify-evenly  items-start flex-col">
            {/* <Top /> */}
            <Center  />
         </Box>

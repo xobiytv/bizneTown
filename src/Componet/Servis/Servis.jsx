@@ -14,25 +14,27 @@ export default function Background() {
                 <p className='text-[30px]  text-white tex-hed'>Наши партнеры</p>
             </div>
             <div className="w-full p-20">
+                {/* First Swiper instance */}
                 <Swiper
-                    slidesPerView={2} // Default number of slides to show on smaller screens
+                    slidesPerView={2} // Default number of slides on very small screens (e.g., sx)
                     spaceBetween={10}
                     pagination={{ clickable: false }}
                     navigation={false}
                     autoplay={{
-                        delay: 1000, // Delay between slides in milliseconds
-                        disableOnInteraction: false, // Keeps autoplay running even after user interaction
+                        delay: 1000, // Slide change delay
+                        disableOnInteraction: false, // Continues autoplay after interaction
                     }}
                     breakpoints={{
-                        640: { slidesPerView: 2, spaceBetween: 10 },
-                        768: { slidesPerView: 3, spaceBetween: 15 },
-                        1024: { slidesPerView: 6, spaceBetween: 20 },
-                        1280: { slidesPerView: 6, spaceBetween: 20 }, // Display 5 slides on extra-large screens
+                        640: { slidesPerView: 2, spaceBetween: 10 }, // sm screens
+                        768: { slidesPerView: 3, spaceBetween: 15 }, // md screens
+                        1024: { slidesPerView: 6, spaceBetween: 20 }, // lg screens
+                        1280: { slidesPerView: 6, spaceBetween: 20 }, // xl screens
                     }}
                     modules={[Pagination, Navigation, Autoplay]}
                     className="mySwiper"
                 >
-                    <div className='pb-10'>
+                    <div className="pb-10">
+                        {/* Rendering each item in `partfolioA` */}
                         {partfolioA.map((item) => (
                             <SwiperSlide key={item.id}>
                                 <div className="flex justify-center p-2">
@@ -40,31 +42,31 @@ export default function Background() {
                                 </div>
                             </SwiperSlide>
                         ))}
-
                     </div>
-
                 </Swiper>
-                <div className='mt-10'>
+
+                {/* Second Swiper instance */}
+                <div className="mt-10">
                     <Swiper
-                        slidesPerView={2} // Default number of slides to show on smaller screens
+                        slidesPerView={2} // Default slides on very small screens (e.g., sx)
                         spaceBetween={10}
                         pagination={{ clickable: false }}
                         navigation={false}
                         autoplay={{
-                            delay: 1000, // Delay between slides in milliseconds
-                            disableOnInteraction: false, // Keeps autoplay running even after user interaction
+                            delay: 1000, // Slide change delay
+                            disableOnInteraction: false, // Continues autoplay after interaction
                         }}
                         breakpoints={{
-                            640: { slidesPerView: 2, spaceBetween: 10 },
-                            768: { slidesPerView: 3, spaceBetween: 15 },
-                            1024: { slidesPerView: 6, spaceBetween: 20 },
-                            1280: { slidesPerView: 6, spaceBetween: 20 }, // Display 5 slides on extra-large screens
+                            640: { slidesPerView: 2, spaceBetween: 10 }, // sm screens
+                            768: { slidesPerView: 3, spaceBetween: 15 }, // md screens
+                            1024: { slidesPerView: 6, spaceBetween: 20 }, // lg screens
+                            1280: { slidesPerView: 6, spaceBetween: 20 }, // xl screens
                         }}
                         modules={[Pagination, Navigation, Autoplay]}
                         className="mySwiper"
                     >
-                        <div className=''>
-
+                        <div>
+                            {/* Rendering each item in `partfolioB` */}
                             {partfolioB.map((item) => (
                                 <SwiperSlide key={item.id}>
                                     <div className="flex justify-center p-2">
@@ -73,11 +75,10 @@ export default function Background() {
                                 </SwiperSlide>
                             ))}
                         </div>
-
                     </Swiper>
                 </div>
-
             </div>
+
 
         </div >
     );
