@@ -3,17 +3,28 @@ import Navbar from './navbar/Navbar'
 import Header from './header/Header'
 import Servis from './Servis/Servis'
 import Usluga from './Partfolio/Usluga'
+import Footer from './footer/footer'
+import Form from './footer/form'
+import Fotert from './footer/fotert'
+import Top from './Servis/Top'
+import Team from './Team'
 
 export default function Main() {
     return (
         <div>
             <Navbar />
             <Header />
-            <Servis />
+            <Top />
+            <Form />
             <Usluga />
-            <h1 class="text-center text-xl font-bold ">
-                Hello world!
-            </h1>
+
+            <Servis />
+            <Form />
+            {/* <Team /> */}
+            {/* <Fotert /> */}
+            {/* <Footer /> */}
+
+            
         </div>
     )
 }

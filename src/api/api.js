@@ -1,6 +1,6 @@
 
 import logofull from '../Assisent/logoPNG.jpg'
-import logoPNG from '../Assisent/logoRmo.png'
+import logoPNG from '../Assisent/logo_png.png'
 import Rasm1 from '../Assisent/11.png'
 import Rasm2 from '../Assisent/bar.png'
 import Rasm3 from '../Assisent/beton.png'

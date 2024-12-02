@@ -50,41 +50,41 @@ export default function Usluga() {
             <div className="w-full p-20">
                 <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     {/* First item spans 2 rows on large screens, normal span on smaller screens */}
-                    <div className="lg:row-span-2 col-span-1 bg-black p-4">
+                    <div className="btn lg:row-span-2 col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[0].name}</b>
                         <p>{texta[0].discriptiom}</p>
                     </div>
 
                     {/* Remaining items - they will adjust based on screen size */}
-                    <div className="col-span-1 bg-black p-4">
+                    <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[1].name}</b>
                         <p>{texta[1].discriptiom}</p>
                     </div>
-                    <div className="col-span-1 bg-black p-4">
+                    <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[2].name}</b>
                         <p>{texta[2].discriptiom}</p>
                     </div>
 
                     {/* Below rows on smaller screens */}
-                    <div className="col-span-1 bg-black p-4">
+                    <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[3].name}</b>
                         <p>{texta[3].discriptiom || 'No description available'}</p>
                     </div>
-                    <div className="col-span-1 bg-black p-4">
+                    <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[4].name}</b>
                         <p>{texta[4].discriptiom}</p>
                     </div>
-                    <div className="col-span-1 bg-black p-4">
+                    <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[5].name}</b>
                         <p>{texta[5].discriptiom}</p>
                     </div>
 
                     {/* Additional items */}
-                    <div className="col-span-1 bg-black p-4">
+                    <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[6].name}</b>
                         <p>{texta[6].discriptiom}</p>
                     </div>
-                    <div className="col-span-1 bg-black p-4">
+                    <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[7].name}</b>
                         <p>{texta[7].discriptiom}</p>
                     </div>

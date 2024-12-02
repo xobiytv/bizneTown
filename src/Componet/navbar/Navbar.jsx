@@ -127,7 +127,7 @@ export default function PrimarySearchAppBar() {
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
         >
-            <img className='w-[50px]' src={logoPNG} alt="" />
+            <img className='w-[100px] ' src={logoPNG} alt="" />
             <div className='w-[200px] h-60 '>
                 <ul className='flex flex-col justify-center ml-5 items-start gap-3 font-bold text-lg'>
                     {
@@ -149,7 +149,7 @@ export default function PrimarySearchAppBar() {
                 <Toolbar sx={{ marginX: '25px', backgroundColor: '#000e1e  ' }}>
 
                     <div className='flex justify-evenly items-center w-full px-8'>
-                        <img className='w-[50px]' src={logoPNG} alt="" />
+                        <img className='w-[100px]' src={logoPNG} alt="" />
 
                         <Box sx={{ flexGrow: 1 }} />
                         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
