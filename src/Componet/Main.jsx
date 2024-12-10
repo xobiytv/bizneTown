@@ -8,13 +8,16 @@ import Form from './footer/form'
 import Fotert from './footer/fotert'
 import Top from './Servis/Top'
 import Team from './Team'
+import UTP from './UTP'
 
 export default function Main() {
     return (
         <div>
             <Navbar />
             <Header />
+
             <Top />
+            <UTP />
             <Form />
             <Usluga />
 
@@ -22,9 +25,9 @@ export default function Main() {
             <Form />
             {/* <Team /> */}
             {/* <Fotert /> */}
-            {/* <Footer /> */}
+            <Footer />
 
-            
+
         </div>
     )
 }

@@ -1,81 +1,52 @@
-// App.js
-import React from "react";
+import React from 'react';
+import { Instagram, Telegram } from '@mui/icons-material';
 
-function App() {
+const Footer = () => {
     return (
-        <div className="bg-black  text-white py-16 px-4 md:px-8">
-            {/* Heading Section */}
-
-
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-                {/* Icons Section */}
-                <div className="text-center lg:text-left gap-8 lg:w-1/3">
-                    {/* <h2 className="text-2xl font-bold text-white mb-4">bmark</h2> */}
-                    <p className="text-gray-400 mb-4">
-                        We help customers to find the best product near them, not time spent searching for the best one.
-                    </p>
-                    <div className="text-gray-400 space-y-2 mb-4">
-                        <div className="flex items-center justify-left lg:justify-start space-x-2">
-                            <span>📧</span>
-                            <a href="mailto:support@example.com" className="hover:text-white">support@example.com</a>
-                        </div>
-                        <div className="flex items-center justify-center lg:justify-start space-x-2">
-                            <span>📞</span>
-                            <a href="tel:+0012345678910" className="hover:text-white">+00 1234 456 789 10</a>
-                        </div>
-                    </div>
-                    <div className="flex justify-center lg:justify-start space-x-4 mt-4">
-                        <a href="#" className="text-gray-400 hover:text-white">LinkedIn</a>
-                        <a href="#" className="text-gray-400 hover:text-white">Twitter</a>
-                        <a href="#" className="text-gray-400 hover:text-white">Instagram</a>
-                    </div>
+        <footer className="bg-[#000e1e]  text-white py-8">
+            <div className="container pt-12 px-24 mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                {/* Chap tomonda */}
+                <div className="text-left space-y-2">
+                    <p className="text-[19px]">Telefon: +998 90 123 45 67</p>
+                    <p className="text-[19px]">Telefon: +998 91 234 56 78</p>
+                    <p className="text-[19px]">Manzil: Toshkent, Amir Temur ko'chasi, 10</p>
+                    <p className="text-[19px]">Manzil: Jizzax, Mustaqillik ko'chasi, 5</p>
                 </div>
 
-                {/* Form Section */}
-                <div className="flex flex-col lg:flex-row gap-8 lg:w-1/3">
-                    <div className="bg-white text-black p-6 rounded-lg shadow-md w-full max-w-md">
-                      
-                        <form className="space-y-4">
-                            <input
-                                type="text"
-                                placeholder="Full Name"
-                                className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
-                            />
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
-                            />
-                            <textarea
-                                placeholder="How can we help you?"
-                                className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
-                            ></textarea>
-                            <button
-                                type="submit"
-                                className="w-full p-3 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition"
-                            >
-                                Send a Message
-                            </button>
-                        </form>
-                    </div>
+                {/* O'rtada */}
+                <div className="flex flex-col items-start space-y-2">
+                    <a href="#services" className="text-[19px] hover:text-gray-400">Xizmatlar</a>
+                    <a href="#about" className="text-[19px] hover:text-gray-400">Biz haqimizda</a>
+                    <a href="#portfolio" className="text-[19px] hover:text-gray-400">Portfolio</a>
+                    <a href="#contact" className="text-[19px] hover:text-gray-400">Bog'lanish</a>
+                </div>
 
-                    {/* Illustration Section */}
-                    {/* <div className="hidden lg:block">
-                        <img
-                            src="your-image-path.jpg" // Replace with actual image path
-                            alt="Contact Us Illustration"
-                            className="rounded-lg w-full max-w-md"
-                        />
-                    </div> */}
+                {/* O'ng tomonda */}
+                <div className="flex space-x-6">
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-gray-400"
+                    >
+                        <Instagram sx={{fontSize: 38}} />
+                    </a>
+                    <a
+                        href="https://t.me"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-gray-400"
+                    >
+                        <Telegram  sx={{fontSize: 38}}/>
+                    </a>
                 </div>
             </div>
-
-            {/* Footer Section */}
             <footer className="mt-16 text-center text-gray-400">
-                <p className="text-sm mt-2">© Tactix 2024, All Rights Reserved</p>
+                <p className="text-sm mt-2">© Biznestown 2024, All Rights Reserved</p>
             </footer>
-        </div>
+        </footer>
     );
-}
+};
 
-export default App;
+export default Footer;
+

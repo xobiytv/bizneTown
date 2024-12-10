@@ -10,8 +10,10 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 export default function Background() {
     return (
         <div className="relative min-h-screen bg-[#000e1e] text-white">
-            <div className='pt-12 pl-24'>
-                <p className='text-[30px]  text-white tex-hed'>Наши партнеры</p>
+            <div className='text-center'>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                    Наши партнеры
+                </h1>
             </div>
             <div className="w-full p-20">
                 {/* First Swiper instance */}

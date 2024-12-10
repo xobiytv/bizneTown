@@ -1,57 +1,53 @@
 import * as React from 'react';
 
 const texta = [
+    // {
+    //     id: 1,
+    //     name: 'кошимча хизматларимиз',
+    //     discriptiom: '1. Montaj, 2. Syomka + montaj 3. Kontent reja, 4. Ssenary yozish, 5. Storytelling, 6. Target reklama, 7. Full standart, 8. Aksiya va o`yinlar, 9. So`rovnoma',
+    // },
     {
         id: 1,
-        name: 'ЛИДОГЕ- НЕРАЦИЯ',
-        discriptiom: 'Запуск контекстной и таргетированной рекламы с целью увеличения потока клиентов',
+        name: 'Тарғиб қилиш, таргет реклама, блогерлар билан ҳамкорлик',
     },
     {
         id: 2,
-        name: 'ЧАТ-БОТЫ',
-        discriptiom: 'Создаем чат-ботов в Инстаграм и Телеграм',
+        name: 'Контент яратиш, копирайтинг, видео-контент',
     },
     {
         id: 3,
-        name: 'АНАЛИ- ЗИРУЕМ',
-        discriptiom: 'ваших конкурентов',
+        name: 'Аудитория ва рақобатчиларни таҳлил қилиш',
     },
     {
         id: 4,
-        name: 'СОЗДАЕМ LANDING PAGE',
+        name: 'Профилингизни юритиш',
     },
     {
         id: 5,
-        name: 'SMM- ПРОДВИЖЕНИЕ',
-        discriptiom: 'Вовлекаем в коммуникацию с брендом и формируем доверие целевой аудитории для достижения конкретных бизнес целей',
+        name: 'Ҳар ой натижалар бўйича ҳисоботлар тақдим этиш',
     },
-    {
-        id: 6,
-        name: 'АВТОВО- РОНКИ',
-        discriptiom: 'которые окупают рекламные бюджеты в разы',
-    },
-    {
-        id: 7,
-        name: 'INFLUENCE- МАРКЕТИНГ',
-    },
-    {
-        id: 8,
-        name: 'PPC PEКЛАМА',
-        discriptiom: 'РРС реклама это инструмент performance маркетинга от поисковых систем (Google, Яндекс) и социальных сетей (Facebook, Instagram)',
-    },
+
+
+
+
+
+
 ];
 
 export default function Usluga() {
     return (
         <div className="relative min-h-screen bg-[#000e1e] text-white">
-            <div className='pt-12 pl-24'>
-                <p className='text-[30px] text-white tex-hed'>Что мы умеем?</p>
+            <div className='pt-10 text-center'>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                    Бизани хизматларимиз
+                </h1>
             </div>
+
             <div className="w-full p-20">
                 <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     {/* First item spans 2 rows on large screens, normal span on smaller screens */}
                     <div className="btn lg:row-span-2 col-span-1 bg-black p-4">
-                        <b className='text-[28px]'>{texta[0].name}</b>
+                        <b className='text-[25px]'>{texta[0].name}</b>
                         <p>{texta[0].discriptiom}</p>
                     </div>
 
@@ -68,26 +64,15 @@ export default function Usluga() {
                     {/* Below rows on smaller screens */}
                     <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[3].name}</b>
-                        <p>{texta[3].discriptiom || 'No description available'}</p>
+                        <p>{texta[3].discriptiom}</p>
                     </div>
                     <div className="btn col-span-1 bg-black p-4">
                         <b className='text-[28px]'>{texta[4].name}</b>
                         <p>{texta[4].discriptiom}</p>
                     </div>
-                    <div className="btn col-span-1 bg-black p-4">
-                        <b className='text-[28px]'>{texta[5].name}</b>
-                        <p>{texta[5].discriptiom}</p>
-                    </div>
 
-                    {/* Additional items */}
-                    <div className="btn col-span-1 bg-black p-4">
-                        <b className='text-[28px]'>{texta[6].name}</b>
-                        <p>{texta[6].discriptiom}</p>
-                    </div>
-                    <div className="btn col-span-1 bg-black p-4">
-                        <b className='text-[28px]'>{texta[7].name}</b>
-                        <p>{texta[7].discriptiom}</p>
-                    </div>
+
+
                 </div>
             </div>
 

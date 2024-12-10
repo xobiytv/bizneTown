@@ -10,7 +10,7 @@ export default function Center() {
         <div className="flex justify-around items-center w-full h-full">
             {/* Left section with text and button */}
             <div className="left w-10/12 lg:w-10/12 md:w-10/12">
-                <p className="text-[30px] text-white font-bold">Мы можем:</p>
+                <p className="text-[30px] text-white font-bold">Бизани хизматларимиз:</p>
                 <p className="text-white py-6 pb-20 mb-6">
                     <TypewriterText />
                 </p>
